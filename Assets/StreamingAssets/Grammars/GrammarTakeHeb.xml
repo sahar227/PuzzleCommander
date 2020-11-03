@@ -1,0 +1,25 @@
+<grammar version="1.0" xml:lang="en-US" root="playCommands"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+
+
+  <rule id="playCommands">
+    <item> kah et</item>
+    <ruleref uri="#number" />
+  </rule>
+
+  <rule id="number">
+    <one-of>
+      <item> Ehad </item>
+      <item> Shtaim </item>
+      <item> Shalosh </item>
+      <item> Arba </item>
+      <item> Hamesh </item>
+      <item> Shesh </item>
+      <item> Sheva </item>
+      <item> Shmone </item>
+      <item> Tesha </item>
+    </one-of>
+  </rule>
+
+</grammar>

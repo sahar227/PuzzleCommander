@@ -1,0 +1,31 @@
+<grammar version="1.0" xml:lang="en-US" root="playCommands"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+
+
+  <rule id="playCommands">
+    <item> move </item>
+    <ruleref uri="#number" />
+    <item> to </item>
+    <ruleref uri="#letters" />
+  </rule>
+
+  <rule id="number">
+    <one-of>
+      <item> zero </item>
+      <item> One </item>
+      <item> two </item>
+      <item> three </item>
+    </one-of>
+  </rule>
+
+  <rule id="letters">
+    <one-of>
+      <item> aye</item>
+      <item> bee </item>
+      <item> sea </item>
+      <item> dee </item>
+    </one-of>
+  </rule>
+
+</grammar>

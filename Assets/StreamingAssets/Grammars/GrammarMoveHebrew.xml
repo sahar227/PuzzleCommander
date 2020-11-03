@@ -1,0 +1,41 @@
+<grammar version="1.0" xml:lang="en-US" root="playCommands"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+
+
+  <rule id="playCommands">
+    <item> Hazez et</item>
+    <ruleref uri="#number" />
+    <item> el </item>
+    <ruleref uri="#letters" />
+  </rule>
+
+  <rule id="number">
+    <one-of>
+      <item> Ehad </item>
+      <item> Shtaim </item>
+      <item> Shalosh </item>
+      <item> Arba </item>
+      <item> Hamesh </item>
+      <item> Shesh </item>
+      <item> Sheva </item>
+      <item> Shmone </item>
+      <item> Tesha </item>
+    </one-of>
+  </rule>
+
+  <rule id="letters">
+    <one-of>
+      <item> aigul adom</item>
+      <item> ribua adom </item>
+      <item> meshulash adom </item>
+      <item> aigul yarok</item>
+      <item> ribua yarok </item>
+      <item> meshulash yarok </item>
+      <item> aigul kahol</item>
+      <item> ribua kahol </item>
+      <item> meshulash kahol </item>
+    </one-of>
+  </rule>
+
+</grammar>

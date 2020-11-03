@@ -1,0 +1,41 @@
+<grammar version="1.0" xml:lang="en-US" root="playCommands"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+
+
+  <rule id="playCommands">
+    <item> take </item>
+    <ruleref uri="#number" />
+    <item> from board </item>
+  </rule>
+
+  <rule id="number">
+    <one-of>
+      <item> One </item>
+      <item> Two </item>
+      <item> Three </item>
+      <item> Four </item>
+      <item> Five </item>
+      <item> Six </item>
+      <item> Seven </item>
+      <item> Eight </item>
+      <item> Nine </item>
+    </one-of>
+  </rule>
+
+  <rule id="letters">
+    <one-of>
+      <item> red circle</item>
+      <item> red square </item>
+      <item> red triangle </item>
+      <item> green circle</item>
+      <item> green square </item>
+      <item> green triangle </item>
+      <item> blue circle</item>
+      <item> blue square </item>
+      <item> blue triangle </item>
+      <item> dee </item>
+    </one-of>
+  </rule>
+
+</grammar>
